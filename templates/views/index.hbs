@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bff1d60b7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Weather App</title>
+</head>
+<body>
+    {{>navbar}}
+    <img class="backGround" src="./img/bg2.jpg" alt="">
+    <div class="main-content">
+        
+        <div class="content">
+            {{>header}}
+            <div class="text">
+            <p>To get real time weather information enter the place name: </p>
+            </div>
+            <form class="searchbar"> 
+            <input type="text" placeholder="Enter place name">
+            <button class="search">&#128269; Search</button>
+            </form>
+        </div>
+        
+    </div>
+    <div class="data">
+            <div class="sub-heading">Data will be displayed here !!!</div>
+    </div>
+
+<script src="/script.js"></script>
+</body>
+</html>
+
+
+ {{!-- <a href="/help">help.hbs</a>
+    <a href="http://localhost:3000/help"> /Help </a>
+    <a href="./help.html">Help.html</a>
+    <a href="./docs.html"> Docs.html</a> --}}
