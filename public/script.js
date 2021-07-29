@@ -7,7 +7,7 @@ function handleForm(e) {
     e.preventDefault();
     div.innerHTML = "<div class='sub-heading'>Loading data....</div>";
     const search = input.value;
-    const url = `http://localhost:3000/weather?search=${search}`;
+    const url = `/weather?search=${search}`;
     fetch(url)
         .then((res) => res.json())
         .then((res) => showData(res))
